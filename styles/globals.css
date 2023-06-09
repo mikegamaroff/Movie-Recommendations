@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;900&display=swap");
+/* autoprefixer grid: autoplace */
+:root {
+  --transition-default: all 0.2s ease-in-out;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: rgb(243, 243, 243);
+  font-size: 16px;
+  background: rgb(15, 15, 15);
+}
+
+* {
+  -webkit-touch-callout: default;
+
+  box-sizing: border-box;
+  letter-spacing: normal;
+  font-family: "Poppins", -apple-system, Arial, BlinkMacSystemFont, roboto slab,
+    droid serif, segoe ui, Ubuntu, Cantarell, Georgia, serif !important;
+}
+a,
+.a {
+  color: rgb(208, 208, 143);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+.a:hover {
+  color: rgb(241, 241, 124);
+}
+* {
+  box-sizing: border-box;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-wheel {
+  border: 4px solid #c5c5c5;
+  border-top: 4px solid #467031;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}

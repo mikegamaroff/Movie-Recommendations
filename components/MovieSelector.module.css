@@ -1,0 +1,69 @@
+.movieposter {
+  border-radius: 8px;
+  overflow: hidden;
+  width: 120px;
+  height: 180px;
+  position: relative;
+  flex: 0 0 auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.411);
+  cursor: pointer;
+  transition: var(--transition-default);
+}
+.movieposter:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.411);
+  filter: brightness(2);
+}
+.movieposterSelected {
+  border: 5px solid rgba(255, 0, 0, 0.376);
+}
+.movieGrid {
+  display: flex;
+  overflow-x: scroll;
+  gap: 20px;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  padding: 20px;
+}
+.movieGrid::-webkit-scrollbar {
+  height: 5px;
+}
+
+.movieGrid::-webkit-scrollbar-track {
+  background: black;
+}
+
+.movieGrid::-webkit-scrollbar-thumb {
+  background: rgb(95, 5, 5);
+  height: 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.selector {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgb(0, 0, 0);
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(22, 255, 1, 0.376);
+}
+.loaderContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 620px) {
+  .movieGrid::-webkit-scrollbar {
+    display: none;
+  }
+}
