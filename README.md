@@ -1,7 +1,7 @@
-## Movie Recommendation Engine
+## Movie Recommendation engine
 This application is a movie recommendation system built by Mike Gamaroff. 
 
-I opted to use NextJS because it simplifies API management, which I needed to make the appliation a lot more vibrant and interesting, leverage movie posters from a free service called TMDB. 
+I opted to use NextJS because it simplifies API management, which I needed to make the appliation a lot more vibrant and interesting, and leverage movie posters from a free service called TMDB. 
 
 This allowed me to use the names provided in the movies.json to get posters of every movie listed.
 
@@ -40,10 +40,12 @@ Key elements:
 
 10. **ENV**: An .env.local is needed with the param TMDB_READ_TOKEN=xxxx which is the read token from TMDB to access the API. I can provide mine for the test.
 
+Do a `yarn install` as there are a few light libraries like `classnames` and `node-fetch` that make this possible.
+
 ### Summary
 
 Simply having a text input where a user could type in IDs may have worked, but it would not have been user friendly. The user may not know which movie corresponds to which ID, and they would greatly appreciate not just knowing the movie they are seeking recommendations from, but seeing the movie poster itself.
 
-This is why I felt that we needed a strong UI that leveraged imagery to make it easy and intuitive for the user to get the recommendations they wanted by doing nothing more than choosing the iconic film imagery they known and love.
+This is why I felt that we needed a strong UI that leveraged imagery to make it easy and intuitive for the user to get the recommendations they wanted by doing nothing more than choosing the iconic film visuals they known and love.
 
 This exercise demonstrates not only my ability to implement sound programmatic logic utilizing predetermined datasets, but my empathy and understanding for the needs of the user who should never be presented with difficult challenges when navigating their online experiences.
