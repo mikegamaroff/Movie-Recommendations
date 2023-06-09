@@ -1,4 +1,4 @@
-## Selfbook Coding Challenge
+## Movie Recommendation Engine
 This application is a movie recommendation system built by Mike Gamaroff. 
 
 I opted to use NextJS because it simplifies API management, which I needed to make the appliation a lot more vibrant and interesting, leverage movie posters from a free service called TMDB. 
